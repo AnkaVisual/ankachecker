@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AnkaChecker — проверка ПК и инструментов</title>
+  <meta name="description" content="AnkaChecker — настольное приложение для Windows: запуск форензик-утилит, просмотр подозрительных процессов и сбор артефактов системы." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top">
+        <span class="brand-badge">AC</span>
+        <span class="brand-text">AnkaChecker</span>
+      </a>
+      <nav class="nav">
+        <a href="#features">Возможности</a>
+        <a href="#download">Скачать</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Windows · Electron · Форензик-панель</div>
+          <h1>AnkaChecker</h1>
+          <p class="lead">Настольное приложение для проверки окружения Minecraft/ПК: быстрый доступ к форензик-утилитам, просмотр процессов с выделением подозрительных и сбор системных артефактов.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="download/AnkaChecker-Setup-1.4.3.exe" download>Скачать инсталлер</a>
+            <a class="btn ghost" href="#features">Возможности</a>
+          </div>
+          <div class="hero-note">Раздел «Чекер» в приложении сейчас помечен как <strong>«Скоро»</strong> — активны инструменты, процессы и артефакты.</div>
+        </div>
+        <div class="hero-card">
+          <div class="mock-titlebar">
+            <span></span><span></span><span></span>
+            <div class="mock-title">AnkaChecker</div>
+          </div>
+          <div class="mock-body">
+            <div class="mock-side">
+              <div class="mock-item active">🛡️ Чекер</div>
+              <div class="mock-item">🧰 Инструменты</div>
+              <div class="mock-item">⚙️ Процессы</div>
+              <div class="mock-item">📋 Артефакты</div>
+            </div>
+            <div class="mock-main">
+              <div class="mock-soon">Скоро..</div>
+              <div class="mock-stats">
+                <div class="mock-stat"><b>Инструменты</b><span>запуск/скачивание</span></div>
+                <div class="mock-stat warn"><b>Процессы</b><span>подозрительные выделены</span></div>
+                <div class="mock-stat"><b>Артефакты</b><span>Prefetch, USB, Recent…</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="section alt">
+      <div class="container">
+        <h2>Скачать</h2>
+        <p class="section-lead">Установщик AnkaChecker для Windows с комплектом инструментов.</p>
+        <div class="card download-card">
+          <div class="download-main">
+            <div class="card-ico">⬇️</div>
+            <div>
+              <h3>AnkaChecker Setup 1.4.3</h3>
+              <p>Windows x64 · NSIS-инсталлер · ~89,5 МБ · инструменты включены в поставку</p>
+            </div>
+          </div>
+          <a class="btn primary" href="download/AnkaChecker-Setup-1.4.3.exe" download>Скачать .exe</a>
+        </div>
+        <p class="hint">Инсталлер не подписан цифровой подписью — Windows SmartScreen или антивирус могут показать предупреждение.</p>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Возможности</h2>
+        <p class="section-lead">Текущее состояние приложения (v1.4.3).</p>
+        <div class="grid cards">
+          <article class="card">
+            <div class="card-ico">🧰</div>
+            <h3>Инструменты</h3>
+            <p>Плитки для запуска форензик-утилит. Если программа найдена — открывается сразу. Если нет и доступна авто-загрузка — скачивается в папку инструментов и запускается. При необходимости можно указать файл вручную.</p>
+          </article>
+          <article class="card">
+            <div class="card-ico">⚙️</div>
+            <h3>Процессы</h3>
+            <p>Показываются все процессы, кроме системных не подозрительных. Подозрительные процессы (включая системные) выделяются красным с указанием причины. Доступны фильтр, обновление, автообновление и завершение процесса.</p>
+          </article>
+          <article class="card">
+            <div class="card-ico">📋</div>
+            <h3>Артефакты</h3>
+            <p>Встроенный сбор следов без внешних утилит: Prefetch, недавние файлы, история USB-устройств, записи UserAssist (ROT13) и проверка подозрительных имён в загрузках/временных папках.</p>
+          </article>
+          <article class="card muted-card">
+            <div class="card-ico">🛡️</div>
+            <h3>Чекер</h3>
+            <p>Раздел находится в разработке и в текущей версии отображает статус «Скоро..». Планируемый функционал: проверка файлов/клиента Minecraft на известные сигнатуры и подозрительные следы.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details>
+            <summary>Почему раздел «Чекер» показывает «Скоро»?</summary>
+            <p>Функционал автоматической проверки в интерфейсе чекера сейчас отключён/находится в разработке. При этом доступны запуск инструментов, анализ процессов и сбор артефактов.</p>
+          </details>
+          <details>
+            <summary>Нужны ли права администратора?</summary>
+            <p>Для части артефактов (например, Prefetch) и некоторых системных операций могут требоваться права администратора. Без них отдельные разделы могут быть недоступны или неполны.</p>
+          </details>
+          <details>
+            <summary>Где хранятся скачанные инструменты?</summary>
+            <p>Приложение ищет инструменты в комплекте/папке приложения и в пользовательской папке данных приложения (<code>userData/tools</code>). Автоматически скачанные утилиты сохраняются в доступное для записи расположение.</p>
+          </details>
+          <details>
+            <summary>Это антивирус?</summary>
+            <p>Нет. AnkaChecker — вспомогательная панель для запуска утилит и просмотра признаков/следов. Результаты требуют ручной проверки и не являются стопроцентным вердиктом.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> AnkaChecker</div>
+      <div class="footer-note">Сайт проекта · статическая страница</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
