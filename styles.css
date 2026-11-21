@@ -58,6 +58,7 @@ code {
   gap: 16px;
   min-height: 68px;
 }
+.topbar .btn { padding: 8px 16px; font-size: 13px; white-space: nowrap; }
 .brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 800; }
 .brand-badge {
   width: 36px; height: 36px; border-radius: 11px;
